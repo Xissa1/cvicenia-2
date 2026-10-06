@@ -1,7 +1,6 @@
 % Metódy inžinierskej práce
 
-\documentclass[10pt,twoside,slovak,a4paper]{coursepaper}
-
+\documentclass[10pt,twocolumn,twoside,slovak,a4paper]{coursepaper}
 \usepackage[slovak]{babel}
 %\usepackage[T1]{fontenc}
 \usepackage[IL2]{fontenc} % lepšia sadzba písmena Ľ než v T1
@@ -127,5 +126,20 @@ Toto je druhý odsek. Medzi týmto a predchádzajúcim odsekom je prázdny riado
 % týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
 \bibliography{literatura}
 \bibliographystyle{abbrv} % prípadne alpha, abbrv alebo hociktorý iný
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.45\textwidth]{diagram1.pdf}
+    \hfill
+    \includegraphics[width=0.45\textwidth]{diagram2.pdf}
+    \caption{Dva diagramy vedľa seba}
+\end{figure}
+
+\begin{figure*}[ht]
+    \centering
+    \includegraphics[width=0.9\textwidth]{diagram1.pdf}
+    \caption{Diagram cez oba stĺpce}
+    \label{fig:diagram-wide}
+\end{figure*}
+
 \end{document}
 
